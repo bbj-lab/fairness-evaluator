@@ -12,7 +12,7 @@ setup(
   install_requires=["mlflow"],
   python_requires=">=3.8",
   entry_points={
-    # Define a MLflow model evaluator with name "dummy_evaluator"
+    # Define a MLflow model evaluator with name "fairness_evaluator"
     "mlflow.model_evaluator": (
         "fairness_evaluator=argos.plugins.fairness_evaluator:FairnessEvaluator"
     )     
