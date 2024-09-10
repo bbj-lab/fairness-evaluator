@@ -10,7 +10,7 @@ setup(
   # Require MLflow as a dependency of the plugin, so that plugin users can simply install
   # the plugin & then immediately use it with MLflow
   install_requires=["mlflow"],
-  python_requires=">=3.8",
+  python_requires=">=3.9, <3.12",
   entry_points={
     # Define a MLflow model evaluator with name "fairness_evaluator"
     "mlflow.model_evaluator": (
