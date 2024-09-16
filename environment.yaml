@@ -1,4 +1,4 @@
-name: argos-fairness-evaluator
+name: fairness-evaluator
 channels:
   - defaults
   - conda-forge
@@ -11,3 +11,4 @@ dependencies:
       - jupyterlab
       - scikit-learn
       - mlflow
+      - equalityml

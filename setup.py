@@ -3,7 +3,7 @@ import pathlib
 from setuptools import find_packages, setup
 
 setup(
-  name="argos",
+  name="fairness-evaluator",
   version="0.0.1",
   description="A fairness evaluation plugin for MLflow",
   packages=find_packages(),
@@ -14,7 +14,7 @@ setup(
   entry_points={
     # Define a MLflow model evaluator with name "fairness_evaluator"
     "mlflow.model_evaluator": (
-        "fairness_evaluator=argos.plugins.fairness_evaluator:FairnessEvaluator"
+        "fairness_evaluator=fairness_evaluator.src.fairness_evaluator:FairnessEvaluator"
     )     
   }
 )
